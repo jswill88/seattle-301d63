@@ -177,17 +177,17 @@ Student.prototype.scope = function () {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scope());
+console.log(joe.scope());
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scopeArrow());
+console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// When joe.scope() is invoked, "this" is the Student object "joe".
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+// When joe.scopeArrow() is invoked, "this" is the Window object.
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// When an arrow function is used, "this" will refer to the next largest scope beyond what it is called in, so it is not a good idea to use arrow functions where you need to use "this".
